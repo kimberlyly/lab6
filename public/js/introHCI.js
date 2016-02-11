@@ -32,8 +32,8 @@ function addProjectDetails(e) {
 
 function callback(result) {
 	console.log(result);
-	var projectCode = '<img src="' + result['image'] + '" class="detailsImage">' + 
-		              '<p><small>' + result['date'] + '</small></p>' + result['summary'];
+	var projectCode = '<img src="' + result.image + '" class="detailsImage">' + 
+		              '<p><small>' + result.date + '</small></p>' + result.summary;
 	$("#project" + result.id + " .details").html(projectCode);
 }
 /*
